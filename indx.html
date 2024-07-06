@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henkilökohtainen Verkkosivu - Pyörivä Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .auto {
+            width: 200px;
+            height: 100px;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/000/372/191/original/red-hot-european-style-sports-car-cartoon-vector-illustration.jpg');
+            background-size: cover;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auto"></div>
+</body>
+</html>
